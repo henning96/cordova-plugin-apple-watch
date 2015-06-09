@@ -80,6 +80,7 @@
 
     localNotification.alertBody = [args objectForKey:@"body"];
     localNotification.applicationIconBadgeNumber = [[args objectForKey:@"badge"] intValue];
+    localNotification.category = [args objectForKey:@"category"];
 
     localNotification.fireDate = [NSDate date];
     localNotification.soundName = UILocalNotificationDefaultSoundName;
